@@ -1,0 +1,61 @@
+<!-- doctor_detail.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ doctor.name }} - Doctor Details</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSure</title>
+    <meta http-equiv="refresh" content="3">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/528065144e.css" crossorigin="anonymous">
+	<!-- include custom CSS -->
+    <!-- <script src="https://kit.fontawesome.com/528065144e.js" crossorigin="anonymous"></script> -->
+	<!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+       <!-- left sidebar -->
+      <div class="container-fluid">
+          <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="{% url 'dashboard:home' %}">
+                        <i class="fas fa-home"></i>
+                        Dashboard <span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'dashboard:insdetail' %}">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        Insurance Providers
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'dashboard:docdetail' %}">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Appointments
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        Chat with my doctor
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- content area -->
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Doctors' Details</h1>
+                    <div>{{ asdas }}</div>
+                    
+                </div>
+</body>
+</html>
